@@ -17,18 +17,23 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".receivers.AirPlaneReceiver"
-            android:enabled="true"
-            >
+        <receiver
+            android:name=".receivers.AirPlaneReceiver"
+            android:enabled="true" >
             <intent-filter>
-                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
             </intent-filter>
         </receiver>
 
-        <service android:name=".services.ContadorServicio"
-            android:enabled="true" android:exported="false"
-            />
+        <service
+            android:name=".services.ContadorServicio"
+            android:enabled="true"
+            android:exported="false" />
 
+        <activity
+            android:name=".AlarmaActivity"
+            android:label="@string/title_activity_alarma" >
+        </activity>
     </application>
 
 </manifest>
